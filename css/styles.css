@@ -1,0 +1,31 @@
+body {
+  background-color: rgb(255, 249, 213);
+  /* background-size: 100vw 100vh; */
+}
+
+form {
+  
+  max-width: 600px;
+  margin: 50px auto;
+  background: url(../assets/form-img.jpg) no-repeat;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.wrapper {
+  width: 500px;
+  margin: auto;
+}
+
+legend {
+  margin: 0 auto;
+}
+
+#title {
+  margin: 0;
+}
+
+#description {
+  margin: 0;
+}
