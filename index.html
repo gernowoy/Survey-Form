@@ -9,72 +9,79 @@
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <form id="survey-form" action="#">
-    <legend>
-      <h1 id="title">Survey Form</h1>
-      <p id="description">make the Moon great again</p>
-    </legend>
+  <form id="survey-form" action="#" autocomplete="off">
     <div class="wrapper">
-      <input id="name" type="text" placeholder=" " required>
-      <label id="name-label" for="name">Name of your grandma</label>
-    </div>
+      <legend class="main-title">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">make the Moon great again</p>
+      </legend>
+      <div class="form-group">
+        <input id="name" class="form-input" type="text" placeholder=" " required>
+        <label id="name-label" class="form-label" for="name">Name of your grandma</label>
+      </div>
 
-    <div class="wrapper">
-      <input id="email" type="email" placeholder=" " required>
-      <label id="email-label" for="email">Email of your boss</label>
-    </div>
+      <div class="form-group">
+        <input id="email" class="form-input" type="email" placeholder=" " required>
+        <label id="email-label" class="form-label" for="email">Email of your boss</label>
+      </div>
 
-    <div class="wrapper">
-      <input id="number" type="number" min="1" max="128" placeholder=" " required>
-      <label id="number-label" for="number">How many unsuccessful shoplifting attempts do you have?</label>
-    </div>
+      <div class="form-group form-group-large">
+        <input id="number" class="form-input form-input-large" type="number" min="1" max="1024" placeholder=" " required>
+        <label id="number-label" class="form-label form-label-large" for="number">How many unsuccessful shoplifting attempts do you have?</label>
+      </div>
 
-    <div class="wrapper">
+      
       <label id="dropdown-label" for="dropdown">The phone suddenly rings when you taking a shower</label>
       <select id="dropdown">
         <option value="" disabled selected> What do you choose?</option>
         <option value="nice_man">Laughing out loud</option>
         <option value="like_his_armpits">Adding more shampoo for your armpits</option>
-        <option value="stinky">I never take a shower</option>
+        <option value="stinky">I have never take a shower</option>
       </select>
-    </div>
+
    
-    <label>Do you like date-plum?</label>
-    <div>
-      <input name="attribute" id="radio-btn1" type="radio" value="Apparently" checked>
-      <label id="radio-label" for="radio-btn1">Apparently</label>
-    </div>
-    <div>
-      <input name="attribute" id="radio-btn2" type="radio" value="Probably">
-      <label id="radio-label" for="radio-btn2">Probably</label>
-    </div>
-    <div>
-      <input name="attribute" id="radio-btn3" type="radio" value="That’s sucks">
-      <label id="radio-label" for="radio-btn3">That’s sucks</label>
-    </div>
+      <label class="radio-text">Do you like date-plum?</label>
+      <div>
+        <input name="attribute" id="radio-btn1" type="radio" value="Apparently" checked>
+        <label id="radio-label" for="radio-btn1">Apparently</label>
+      </div>
 
-    <label>What big body parts do you have?</label>
-    <div>
-      <input id="checkbox-btn1" type="checkbox" value="Nose">
-      <label for="checkbox-btn1">Nose</label>
-    </div>
-    <div>
-      <input id="checkbox-btn2" type="checkbox" value="Ears">
-      <label for="checkbox-btn2">Ears</label>
-    </div>
-    <div>
-      <input id="checkbox-btn3" type="checkbox" value="Left breast">
-      <label for="checkbox-btn3">Left breast</label>
-    </div>
-    <div>
-      <label for="textarea">Write essay about horse long jumping sports (at least 300 symbols)</label>
-      <textarea id="textarea" minlength="300" required></textarea>
-    </div>
+      <div>
+        <input name="attribute" id="radio-btn2" type="radio" value="Probably">
+        <label id="radio-label" for="radio-btn2">Probably</label>
+      </div>
 
-    <button id="submit" type="submit">Submit</button>
+      <div>
+        <input name="attribute" id="radio-btn3" type="radio" value="That’s sucks">
+        <label id="radio-label" for="radio-btn3">That’s sucks</label>
+      </div>
 
+      <label class="checkbox-text">What big body parts do you have?</label>
+      <div>
+        <input id="checkbox-btn1" type="checkbox" value="Nose">
+        <label for="checkbox-btn1">Nose</label>
+      </div>
+
+      <div>
+        <input id="checkbox-btn2" type="checkbox" value="Ears">
+        <label for="checkbox-btn2">Ears</label>
+      </div>
+
+      <div>
+        <input id="checkbox-btn3" type="checkbox" value="Left breast">
+        <label for="checkbox-btn3">Left breast</label>
+      </div>
+      <label class="textarea-text" for="textarea">Write essay "My favorites green pokemons" (at least 300 symbols)</label>
+      <div class="textarea-wrap">
+        <textarea id="textarea" minlength="300" required></textarea>
+      </div>
+      
+      <div>
+        <button id="submit" type="submit">Submit</button>
+        <span>we don't send any sensitive data to Pentagon</span>
+      </div>
+     </div>
   </form>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
-

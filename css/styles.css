@@ -1,31 +1,132 @@
 body {
-  background-color: rgb(255, 249, 213);
-  /* background-size: 100vw 100vh; */
+  background-color: rgba(161, 163, 159, 0.603);
+  font-size: 18px;
+  color: #110b20;
+  font-family: Helvetica, sans-serif;
+  min-width: 260px;
+}
+
+input {
+  font-size: 18px;
+  font-family: Helvetica, sans-serif;
 }
 
 form {
-  
-  max-width: 600px;
+  max-width: 580px;
+ 
   margin: 50px auto;
   background: url(../assets/form-img.jpg) no-repeat;
   padding: 20px;
   box-sizing: border-box;
   border-radius: 20px;
+  box-shadow: 0 4px 10px  rgb(67, 70, 94);
 }
 
 .wrapper {
-  width: 500px;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+    
 }
 
-legend {
-  margin: 0 auto;
+.main-title {
+  margin: 0 auto 20px;
 }
 
-#title {
+#title, #description  {
   margin: 0;
+  text-align: center;
 }
 
-#description {
-  margin: 0;
+.form-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.form-input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  
+}
+
+.form-label {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  color: #110b207e;
+  cursor: pointer;
+}
+
+.form-input:focus ~ .form-label,
+.form-input:not(:placeholder-shown) ~ .form-label {
+  position: absolute;
+  top: -16px;
+  left: 6px;    
+  color: #110b20d8;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.form-input:focus {
+  border-bottom: 1px solid rgba(0, 0, 0)
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #4616be;
+  outline: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4616be80;
+}
+
+button:focus {
+  background-color: #2d1077;
+}
+
+#dropdown, .radio-text, .checkbox-text, .textarea-text {
+  margin: 10px 0;
+}
+
+
+#textarea {
+  width: 98%;
+  height: 100px;
+}
+
+@media screen and (max-width: 520px) {
+  body {
+    font-size: 14px;
+  }
+
+  .form-input:focus ~ .form-label,
+  .form-input:not(:placeholder-shown) ~ .form-label {
+    font-size: 12px;
+  }
+  .form-group-large {
+    top: 10px;
+  }
+  .form-input-large:focus ~ .form-label-large,
+  .form-input-large:not(:placeholder-shown) ~ .form-label-large {
+    top: -25px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .form-label-large {
+    top: -5px;
+  }
 }
